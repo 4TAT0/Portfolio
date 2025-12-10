@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap");
+@import "/reset.css";
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Noto Serif KR", serif;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 307px;
+  height: 30px;
+  background: url(../image/개요_청와대_국민품으로/청와대_국민품으로_1.png)
+    no-repeat center center;
+  margin: 20px;
+}
+header .gnb ul {
+  display: inline-block;
+  padding-right: 20px;
+}
+header .gnb ul li {
+  font-size: 25px;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+}
+
+main {
+  height: 945px;
+  background: url(../image/개요_청와대_국민품으로/climbing_summary_img01.png);
+}
+
+.main_inner {
+  max-width: 1190px;
+  padding-top: 166px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.col1 {
+  width: 476px;
+}
+.col img {
+  width: 100%;
+}
+
+.col2 {
+  width: 595px;
+}
+.col2 h2 {
+  font-size: 43px;
+  margin-bottom: 80px;
+  position: relative;
+}
+.col h2::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: white;
+  width: 50px;
+  left: 0;
+  top: 500px;
+}
+
+.desc p {
+  font-size: 20px;
+}
+
+footer {
+  height: 160px;
+  background-color: #2a2d34;
+}
+.row {
+  max-width: 1420px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  height: inherit;
+  align-items: center;
+}
+div.info > * {
+  display: inline-block;
+}
+footer .col2 {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+}
+address {
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+footer p {
+    margin: 0;
+}
+div.info span{
+    margin-right: 1rem;
+}

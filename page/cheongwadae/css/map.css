@@ -1,0 +1,415 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* ---------------------------------- */
+header {
+  height: 90px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  width: 100%;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 40px;
+}
+header:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+header:hover li.main > a {
+  color: #444;
+}
+header:hover .gnb li a {
+  color: #444;
+}
+
+.header_inner {
+  width: 100%;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  width: 946px;
+  margin-left: 400px;
+  display: none;
+}
+li.main {
+  position: relative;
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-between;
+}
+nav li.main > a {
+  color: #444;
+  display: block;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+ul.gnb {
+  display: flex;
+  width: 70px;
+  margin-right: 20px;
+  gap: 1rem;
+  margin-left: 2rem;
+
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav li.main:hover > a {
+  color: #eb2a4a;
+  transition: 0.35s;
+}
+
+ul.sub {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #eb2a4a;
+  text-align: center;
+  line-height: 35px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+/* li.main:hover ul.sub {
+  display: block;
+} */
+
+li.main ul.m1 {
+  width: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+ul.m2 {
+  width: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+ul.m3 {
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+ul.m4 {
+  width: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+ul.m5 {
+  width: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+/* ---------------------------------- */
+.map_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  top: 13%;
+  transform: translateX(-50%);
+}
+.map_text p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.map {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  margin-top: 14rem;
+  position: relative;
+}
+.map img {
+  width: 100%;
+}
+
+/* --------------------------------- */
+
+ul.num li {
+  position: absolute;
+  cursor: pointer;
+  color: #fff;
+  z-index: 99;
+}
+
+ul.num li a {
+  display: block;
+  width: 2.2vw;
+  height: 2.2vw;
+  background: #eb2a4a;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0.5vw;
+}
+
+ul.num li:hover::after {
+  width: 100px;
+}
+ul.num li::after {
+  width: 0;
+  height: 90%;
+  font-size: 18px;
+  text-indent: 25px;
+  line-height: 2vw;
+
+  position: absolute;
+  overflow: hidden;
+  left: 1vw;
+  top: 0px;
+  transform-origin: left top;
+
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+
+  border: 2px solid #eb2a4a;
+  border-radius: 0 50px 50px 0;
+
+  transition: 0.35s;
+}
+li.bluehouse {
+  left: 44%;
+  top: -3%;
+}
+li.bluehouse::after {
+  content: "청와대 본관";
+}
+li.guesthouse {
+  left: 31%;
+  top: 39%;
+}
+li.guesthouse::after {
+  content: "영빈관";
+}
+li.residence {
+  right: 16%;
+  top: 0%;
+}
+li.residence::after {
+  content: "대통령 관저";
+}
+li.sugung {
+  right: 34.5%;
+  top: 11%;
+}
+li.sugung::after {
+  content: "수궁터";
+}
+li.sangchunjae {
+  right: 23%;
+  top: 25%;
+}
+li.sangchunjae::after {
+  content: "상춘재";
+}
+li.nokjiwon {
+  right: 25%;
+  top: 60%;
+}
+li.nokjiwon::after {
+  content: "녹지원";
+}
+li.secretary {
+  right: 32%;
+  top: 71%;
+}
+li.secretary::after {
+  content: "대통령비서실";
+}
+li.cshall {
+  right: 14%;
+  top: 71%;
+}
+li.cshall::after {
+  content: "춘추관";
+}
+li.garden {
+  left: 11%;
+  top: 70%;
+}
+li.garden::after {
+  content: "무궁화동산";
+}
+li.chill {
+  left: 17%;
+  top: 26%;
+}
+li.chill::after {
+  content: "칠궁";
+}
+
+/* ------------------------------------ */
+
+footer {
+  background-color: #2a2d34;
+  width: 100%;
+  height: 100px;
+}
+.footer-all{
+  margin: 0 auto;
+  width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: right;
+  color: rgba(255,255,255,.5);
+  font-size: 15px;
+}
+.footer-text{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.policy{
+  color: rgba(255,255,255,.5);
+}
+
+/* ------------------------------------ */
+@media screen and (max-width: 721px) {
+  header {
+    height: 60px;
+  }
+  h1 img {
+    height: 25px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+  }
+  .header_inner {
+    height: 60px;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  ul.num li a {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background: #eb2a4a;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.5vw;
+  }
+  
+  ul.num li:hover::after {
+    width: 100px;
+  }
+  ul.num li::after {
+    width: 0;
+    height: 80%;
+    font-size: 0.8rem;
+    text-indent: 20px;
+    line-height: 3.8vw;
+  
+    position: absolute;
+    overflow: hidden;
+    left: 2vw;
+    top: 0px;
+    transform-origin: left top;
+  
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+  
+    border: 2px solid #eb2a4a;
+    border-radius: 0 50px 50px 0;
+  
+    transition: 0.35s;
+  }
+}
+@media screen and (min-width: 722px) {
+  body {
+    font-size: 18px;
+  }
+  nav > ul li.main > a {
+    font-size: 1.2rem;
+  }
+  header {
+    height: 100px;
+  }
+  h1 img {
+    height: 40px;
+  }
+  nav {
+    margin-left: 433px;
+  }
+  nav > ul {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .header_inner {
+    max-width: calc(100% - 6rem);
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  nav {
+    display: block;
+  }
+}

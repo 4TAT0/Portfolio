@@ -1,0 +1,13 @@
+
+footer{background: #2A2D34;height: 160px;}
+.row{max-width: 1420px;margin: auto; display: flex;
+justify-content: space-between;
+height: inherit;
+align-items: center;
+}
+div.info > *{display: inline-block;}
+footer .col2{text-align: right;
+color: rgba(255,255,255,.5);}
+address{font-style: normal;margin-bottom: 1rem;}
+footer p{margin: 0;}
+div.info span {margin-right: 1rem;}

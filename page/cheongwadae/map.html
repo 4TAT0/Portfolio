@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/map.css" />
+    <title>청와대 주요시설</title>
+    <script
+      src="https://kit.fontawesome.com/96680ff812.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <a href="./main.html">
+          <h1 class="logo">
+            <img
+              class="over"
+              src="./image/메인/청와대_ 국민 품으로 (1).png"
+              alt=""
+            />
+          </h1>
+        </a>
+
+        <nav>
+          <ul class="menu flex">
+            <li class="main">
+              <a href="#">개방의 의미</a>
+            </li>
+            <li class="main">
+              <a href="#">청와대 소개</a>
+              <ul class="sub m1">
+                <li><a href="#">역사</a></li>
+                <li><a href="#">지도 및 주요시설</a></li>
+                <li><a href="#">경내 주요 유적</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">관람안내</a>
+              <ul class="sub m2">
+                <li><a href="#">관람 규칙 및 규정</a></li>
+                <li><a href="#">관람시간 및 해설안내</a></li>
+                <li><a href="#">관람 신청</a></li>
+                <li><a href="#">안내도 및 관람코스</a></li>
+                <li><a href="#">활용 프로그램</a></li>
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">함께 가 볼 만한 장소</a></li>
+                <li><a href="#">특별 행사</a></li>
+                <li><a href="#">주말 공연</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">등산로</a>
+              <ul class="sub m3">
+                <li><a href="#">개요</a></li>
+                <li><a href="#">등산로 코스</a></li>
+                <li><a href="#">등산로 이모저모</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">국민소통</a>
+              <ul class="sub m4">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">미디어센터</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+              </ul>
+            </li>
+            <li class="main">
+              <a href="#">내가 만드는 청와대</a>
+              <ul class="sub m5">
+                <li><a href="#">국민 아이디어 제안</a></li>
+                <li><a href="#">관람후기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="gnb">
+          <li><a href="#">EN</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="map_text">
+      <img src="./image/청와대_주요시설/map_cwd_icon01.png" alt="" />
+      <p>지도 내의 장소를 클릭하여 자세히 살펴보세요</p>
+    </div>
+    <div class="map">
+      <img
+        class="mapimg"
+        src="./image/청와대_주요시설/청와대 지도.png"
+        alt="청와대지도"
+      />
+      <ul class="num">
+        <li class="bluehouse">
+          <a href="./map01.html">
+            <h1>1</h1>
+          </a>
+        </li>
+        <li class="guesthouse">
+          <a href="#">
+            <h1>2</h1>
+          </a>
+        </li>
+        <li class="residence">
+          <a href="#">
+            <h1>3</h1>
+          </a>
+        </li>
+        <li class="sugung">
+          <a href="#">
+            <h1>4</h1>
+          </a>
+        </li>
+        <li class="sangchunjae">
+          <a href="#">
+            <h1>5</h1>
+          </a>
+        </li>
+        <li class="nokjiwon">
+          <a href="#">
+            <h1>6</h1>
+          </a>
+        </li>
+        <li class="secretary">
+          <a href="#">
+            <h1>7</h1>
+          </a>
+        </li>
+        <li class="cshall">
+          <a href="#">
+            <h1>8</h1>
+          </a>
+        </li>
+        <li class="garden">
+          <a href="#">
+            <h1>9</h1>
+          </a>
+        </li>
+        <li class="chill">
+          <a href="#">
+            <h1>10</h1>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="footer-all">
+        <img
+          class="footer-logo"
+          src="./image/청와대본관/문화재청청와대국민개방추진단.png"
+          alt=""
+        />
+        <div class="footer-text">
+          <a class="policy" href="">개인정보처리방침</a>
+          <div class="warning">
+            우)110031 서울 종로구 청와대로 1 <br />
+            청와대 업무표장(CI)은 상표권에 등록된 국가재산입니다. <br />
+            사적·상업적 무단사용은 법적인 규제 대상이 됩니다.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $("li.main").mouseenter(function () {
+        $("ul.sub").stop().slideUp();
+        $(this).find("ul.sub").stop().slideDown();
+      });
+      $("li.main").mouseleave(function () {
+        $("ul.sub").stop().slideUp();
+      });
+    </script>
+  </body>
+</html>

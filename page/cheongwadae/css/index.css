@@ -1,0 +1,113 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  background-image: url(../image/landing_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  overflow: hidden;
+  /* vh : whiewport height */
+  text-align: center;
+}
+
+/* ----------------------------------------------------- */
+h1 img {
+  margin-top: 20px;
+  position: absolute;
+}
+h2 img {
+  width: 100%;
+  max-width: 522px;
+}
+main {
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+main p {
+  color: #444;
+}
+.btn {
+  padding-top: 35px;
+}
+.btn a {
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+}
+/* transparent 투명..투명이래*/
+.homepage-go {
+  width: 230px;
+  height: 40px;
+  padding: 31.5px 18px;
+  margin: 4.5px;
+  display: inline-block;
+  background-color: #0d9ab4;
+  color: white;
+  font-size: 25px;
+}
+.homepage-go:hover {
+  background-color: white;
+  border: 2px solid #0d9ab4;
+  color: #0d9ab4;
+}
+.view-go {
+  width: 230px;
+  height: 40px;
+  padding: 31.5px 18px;
+  margin: 4.5px;
+  display: inline-block;
+  background-color: #f74763;
+  color: white;
+  font-size: 25px;
+}
+.view-go:hover {
+  background-color: white;
+  border: 2px solid #f74763;
+  color: #f74763;
+}
+
+@media screen and (max-width: 531px) {
+  .gtn a {
+    display: block;
+    width: 240px;
+  }
+  h1 img {
+    height: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  h2 img {
+    height: 40px;
+  }
+  main p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 532px) {
+  .gtn a {
+    width: 300px;
+  }
+  h1 {
+    margin-left: 45px;
+    text-align: left;
+  }
+  h2 img {
+    width: 100%;
+    max-width: 522px;
+  }
+  main p {
+    font-size: 20px;
+    line-height: 37px;
+  }
+  main {
+    padding: 100px 50px;
+  }
+}

@@ -1,0 +1,79 @@
+body {
+    background: url(../image/bg-wrap.jpg) no-repeat right top / cover;
+    height: 100vh;
+  }
+  .wrap {
+    overflow: auto;
+    position: relative;
+  }
+  .logo {
+    background: url(../image/top-logo.png) no-repeat right top / cover;
+    width: 300px;
+    height: 90px;
+    position: absolute;
+  }
+  .menu > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    padding: 30px 10px;
+    position: absolute;
+    right: 0;
+  }
+  .menu > a:first-child {
+    right: 150px;
+    top: 0px;
+  }
+  main {
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  .list-left , .list-right {
+    width: 370px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.5);
+  }
+  .list-left{
+    margin-right: 15px;
+  }
+  .link1{
+    display: inline-block;
+    padding-top: 100px;
+    background: url(../image/ico_callender.png) no-repeat center top;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .link2{
+    display: inline-block;
+    padding-top: 100px;
+    background: url(../image/ico_callender_check.png) no-repeat center top;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 75px;
+    color: white;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 60%);
+  }
+  .text {
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 60%);
+  }
+  b {
+    color: rgb(255, 166, 0);
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 60%);
+  }
