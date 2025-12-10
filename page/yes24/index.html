@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-pagination-bullet  {
+        width: 86px;
+        text-align: center;
+        border-radius: 0px;
+        line-height: 15px;
+        font-size: 12px;
+        position: relative;
+        color: #fff;
+        border: 1px solid #f00;
+      }
+      .swiper-pagination-bullet b {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #e2782a;
+      }
+      .swiper-pagination-bullet i {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-style:normal;
+        top: -15px;
+      }
+      .swiper-pagination-bullet-active{
+        background: transparent;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 8px;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="text">
+            <span>나한테는 내가 있어</span>
+            <h2>연극<br />82년생 김지영</h2>
+            <p>10월 11일(월) 오후 2시 4차 티켓오픈</p>
+          </div>
+        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <div class="text">
+            <span>브로드웨이의 영원한 슈퍼스타</span>
+            <h2>뮤지컬<br />지저스크라이스트<br />슈퍼스타</h2>
+            <p>2022. 11. 10. ~ 2023. 01. 15. 광림아트센터 BBCH홀</p>
+          </div>
+        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <div class="text">
+            <span>세상은 희생이라 했고, 그녀는 인생이라 했다</span>
+            <h2>뮤지컬<br />서편제</h2>
+            <p>2022. 08. 12. ~ 2022. 10. 23. 광림아트센터 BBCH홀</p>
+          </div>
+        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <ul class="thum">
+        <li><img src="./img/Thum01.jpg" alt="" /></li>
+        <li><img src="./img/Thum02.jpg" alt="" /></li>
+        <li><img src="./img/Thum03.jpg" alt="" /></li>
+        <li><img src="./img/Thum04.jpg" alt="" /></li>
+        <li><img src="./img/Thum05.jpg" alt="" /></li>
+        <li><img src="./img/Thum06.jpg" alt="" /></li>
+        <li><img src="./img/Thum07.jpg" alt="" /></li>
+        <li><img src="./img/Thum08.jpg" alt="" /></li>
+        <li><img src="./img/Thum09.jpg" alt="" /></li>
+        <li><img src="./img/Thum10.jpg" alt="" /></li>
+        <li><img src="./img/Thum11.jpg" alt="" /></li>
+        <li><img src="./img/Thum12.jpg" alt="" /></li>
+        <li><img src="./img/Thum13.jpg" alt="" /></li>
+        <li><img src="./img/Thum14.jpg" alt="" /></li>
+  
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+  effect: "fade",
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return ( `<span class=${className}><b></b><i>${index + 1}/14 </i></span>`)
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// $(".thum").on({
+//     mouseenter:function(){
+//         $(".swiper-pagination").css({"opacity":"0"})
+//     },
+//     mouseleave:function(){
+//         $(".swiper-pagination").css({"opacity":"1"})
+//     },
+// })
+$(".thum li").click(function () {
+  let idx = $(this).index();
+  swiper.slideTo(idx, 500);
+});
+swiper.on("slideChange",function(){
+    let idx=swiper.activeIndex
+    $(".swiper-pagination span").css({"opacity" : "0"})
+    $(".swiper-pagination span").eq(idx)({"opacity" : "1"})
+    $(".swiper-pagination i").css({"opacity" : "0"})
+    $(".swiper-pagination i").eq(idx)({"opacity" : "1"})
+})
+
+
+    </script>
+  </body>
+</html>
