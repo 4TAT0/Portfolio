@@ -1,0 +1,133 @@
+@import "/reset.css";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#sect1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 50px;
+}
+#sect1 h2 {
+  color: #fff;
+}
+#sect1 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.35s ease-out;
+  background-image: url(./img/mai-brand-signiel-pc.jpg.thumb.1920.1920.jpg);
+  background-size: cover;
+  filter: brightness(50%);
+}
+#sect1 .bg .bg_signel.bgShow {
+  opacity: 1;
+}
+#sect1 .wrap {
+  position: relative;
+  max-width: 1576px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#sect1 .wrap h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 130px 0;
+}
+#sect1 .wrap .brand-list {
+  width: 1576px;
+  display: flex;
+  justify-content: space-between;
+}
+#sect1 .wrap .brand-list article {
+  color: #fff;
+  cursor: pointer;
+  height: 500px;
+  transition: 0.35s;
+  text-align: left;
+  opacity: 0.5;
+}
+#sect1 .wrap .brand-list article:last-child .text {
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+#sect1 .wrap .brand-list article.on {
+  opacity: 1;
+}
+#sect1 .wrap .brand-list article.on .text {
+  opacity: 1;
+  top: 380px;
+}
+#sect1 .wrap .brand-list article h3 {
+  width: 254px;
+  border-top: 2px solid #fff;
+}
+#sect1 .wrap .brand-list article h3 img {
+  width: 80%;
+}
+#sect1 .wrap .brand-list article .text {
+  opacity: 0;
+  position: absolute;
+  word-break: break-all;
+  transition: 0.35s;
+  top: 400px;
+  width: 560px;
+}
+#sect1 .wrap .brand-list article .text .title {
+  padding: 30px 0;
+}
+#sect1 .wrap .brand-list article .text .desc {
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+#sect1 .wrap .brand-list article .text .link {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+#sect1 .wrap .brand-list article .text .link.on {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #333;
+  transition: 0.35s;
+}
+
+.frame {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  left: 0;
+  top: 100%;
+  transition: 0.35s;
+  transition-timing-function: linear;
+}
+.frame .scene {
+  width: 100%;
+  height: 100%;
+}
+.frame a.close {
+  position: absolute;
+  z-index: 999;
+  color: #333;
+  font-size: 40px;
+  padding: 0 30px;
+  right: 0;
+  top: 0;
+}/*# sourceMappingURL=index.css.map */

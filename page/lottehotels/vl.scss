@@ -1,0 +1,226 @@
+@import "/reset.css";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+  background: #f2efea;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+  height: 100px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  h1 {
+    padding-right: 90px;
+  }
+  nav ul {
+    display: flex;
+
+    li {
+      padding: 25px;
+      font-size: 19px;
+      font-weight: bold;
+    }
+  }
+}
+
+#sect01 {
+  .text {
+    margin: 250px 0;
+    color: #60450a;
+    text-align: center;
+
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+      line-height: 55px;
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 920px;
+
+    .swiper-slide {
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#sect02 {
+  margin-bottom: 200px;
+  .txt {
+    margin: 200px 0 100px 0;
+    color: #60450a;
+    text-align: center;
+
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+      line-height: 55px;
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+  .service {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .desc {
+      text-align: center;
+      color: #60450a;
+      .img {
+        width: 400px;
+        height: 400px;
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        h1 {
+          font-size: 30px;
+          padding: 10px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+#sect03 {
+  img {
+    width: 100%;
+  }
+}
+
+#sect04 {
+    padding-bottom: 200px;
+  .txt {
+    margin: 200px 0 100px 0;
+    color: #60450a;
+    text-align: center;
+
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+      line-height: 55px;
+      padding-bottom: 30px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+  .hotelservice {
+    width: 1800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #60450a;
+    margin-bottom: 200px;
+    .item {
+      overflow: hidden;
+      position: relative;
+      transition: all 0.3s ease-in;
+      .textbox {
+        color: #fff;
+        position: absolute;
+        width: 432px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -100px;
+        transition: all 0.3s ease-in;
+        h2 {
+          font-size: 32px;
+          font-weight: normal;
+          padding-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          padding-bottom: 20px;
+        }
+      }
+      &:hover .textbox {
+        bottom: 0;
+        background: #482f13;
+        opacity: 0.9;
+        padding: 10px;
+      }
+    }
+  }
+  .slide{
+    display: flex;
+    .text{
+        color: #482f13;
+        width: 50%;
+        height: 589px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 48px;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 21px;
+        }
+    }
+    .sect04slide{
+        width: 50%;
+        height: 589px;
+        .swiper-slide {
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            
+          }
+    }
+  }
+}

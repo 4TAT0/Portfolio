@@ -1,0 +1,194 @@
+@import "/reset.css";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+  background: #f2efea;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  height: 100px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  padding-right: 90px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 25px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#sect01 .text {
+  margin: 250px 0;
+  color: #60450a;
+  text-align: center;
+}
+#sect01 .text h1 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 55px;
+  padding-bottom: 30px;
+}
+#sect01 .text p {
+  font-size: 23px;
+}
+#sect01 .swiper {
+  width: 100%;
+  height: 920px;
+}
+#sect01 .swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sect01 .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#sect02 {
+  margin-bottom: 200px;
+}
+#sect02 .txt {
+  margin: 200px 0 100px 0;
+  color: #60450a;
+  text-align: center;
+}
+#sect02 .txt h1 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 55px;
+  padding-bottom: 30px;
+}
+#sect02 .txt p {
+  font-size: 23px;
+}
+#sect02 .service {
+  width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#sect02 .service .desc {
+  text-align: center;
+  color: #60450a;
+}
+#sect02 .service .desc .img {
+  width: 400px;
+  height: 400px;
+}
+#sect02 .service .desc .img img {
+  width: 100%;
+}
+#sect02 .service .desc .text h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+#sect02 .service .desc .text p {
+  font-size: 20px;
+}
+
+#sect03 img {
+  width: 100%;
+}
+
+#sect04 {
+  padding-bottom: 200px;
+}
+#sect04 .txt {
+  margin: 200px 0 100px 0;
+  color: #60450a;
+  text-align: center;
+}
+#sect04 .txt h1 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 55px;
+  padding-bottom: 30px;
+}
+#sect04 .txt p {
+  font-size: 23px;
+}
+#sect04 .hotelservice {
+  width: 1800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: #60450a;
+  margin-bottom: 200px;
+}
+#sect04 .hotelservice .item {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+#sect04 .hotelservice .item .textbox {
+  color: #fff;
+  position: absolute;
+  width: 432px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px;
+  transition: all 0.3s ease-in;
+}
+#sect04 .hotelservice .item .textbox h2 {
+  font-size: 32px;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+#sect04 .hotelservice .item .textbox p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+#sect04 .hotelservice .item:hover .textbox {
+  bottom: 0;
+  background: #482f13;
+  opacity: 0.9;
+  padding: 10px;
+}
+#sect04 .slide {
+  display: flex;
+}
+#sect04 .slide .text {
+  color: #482f13;
+  width: 50%;
+  height: 589px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sect04 .slide .text h1 {
+  font-size: 48px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+#sect04 .slide .text p {
+  font-size: 21px;
+}
+#sect04 .slide .sect04slide {
+  width: 50%;
+  height: 589px;
+}
+#sect04 .slide .sect04slide .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=vl.css.map */

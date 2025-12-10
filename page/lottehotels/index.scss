@@ -1,0 +1,191 @@
+@import "/reset.css";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+#sect1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 50px;
+  h2{
+    color: #fff;
+  }
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.35s ease-out;
+    background-image: url(./img/mai-brand-signiel-pc.jpg.thumb.1920.1920.jpg);
+    background-size: cover;
+    filter: brightness(50%);
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   left: 0;
+    //   top: 0;
+    //   background-color: rgba(0, 0, 0, 0.5);
+    // }
+
+    // .bg_signel {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url(./img/mai-brand-signiel-pc.jpg.thumb.1920.1920.jpg);
+    // }
+    // .bg_lotte_hotels {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url(./img/mai-brand-hotels-pc.jpg.thumb.1920.1920.jpg);
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center;
+    // }
+    // .bg_l7_hotels {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url(./img/mai-brand-l7-pc.jpg.thumb.1920.1920.jpg);
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center;
+    // }
+    // .bg_lotte_city_hotles {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url(./img/mai-brand-city-pc.jpg.thumb.1920.1920.jpg);
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center;
+    // }
+    // .bg_vl {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url(./img/mai-brand-VL-pc.jpg.thumb.1920.1920.jpg);
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center;
+    // }
+    .bg_signel.bgShow {
+      opacity: 1;
+    }
+  }
+
+  .wrap {
+    position: relative;
+    // z-index: 10;
+    max-width: 1576px;
+    left: 50%;
+    transform: translateX(-50%);
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+      padding: 130px 0;
+    }
+    .brand-list {
+      width: 1576px;
+      display: flex;
+      justify-content: space-between;
+
+      article {
+        color: #fff;
+        cursor: pointer;
+        height: 500px;
+        transition: 0.35s;
+        text-align: left;
+        opacity: 0.5;
+
+        &:last-child .text{
+          text-align: right;
+          position: absolute;
+          right: 0;
+        }
+        &.on {
+          opacity: 1;
+        }
+        &.on .text{
+            opacity: 1;
+            top: 380px;
+        }
+        h3 {
+          width: 254px;
+          border-top: 2px solid #fff;
+          img {
+            width: 80%;
+          }
+        }
+
+        .text {
+            opacity: 0;
+            position: absolute;
+            word-break: break-all;
+            transition: 0.35s;
+            top: 400px;
+            width: 560px;
+            
+            .title {
+              padding: 30px 0;
+            }
+            .desc {
+              padding-bottom: 30px;
+              line-height: 30px;
+            }
+            .link {
+              border: 1px solid #fff;
+              display: inline-block;
+              padding: 5px 10px;
+              &.on{
+                background: #fff;
+                border: 1px solid #fff;
+                color: #333;
+                transition: .35s;
+              }
+            }
+          }
+      }
+    }
+  }
+}
+.frame{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    left: 0;
+    top:100%;
+    transition: .35s;
+    transition-timing-function: linear;
+
+    .scene{
+        width: 100%;
+        height: 100%;
+    }
+    a.close{
+        position: absolute;
+        z-index: 999;
+        color: #333;
+        font-size: 40px;
+        padding: 0 30px;
+        right: 0;
+        top: 0;
+    }
+}
