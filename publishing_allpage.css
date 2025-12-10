@@ -1,0 +1,430 @@
+@import "./reset.css";
+@font-face {
+  font-family: "MonumentExtended-Ultrabold";
+  src: url("./font/MonumentExtended-Ultrabold.otf");
+}
+@font-face {
+  font-family: "Pretendard-Thin";
+  src: url(./font/Pretendard-Thin.otf);
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url(./font/Pretendard-Medium.otf);
+}
+@font-face {
+  font-family: "Pretendard-Black";
+  src: url(./font/Pretendard-Black.otf);
+}
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Pretendard-Medium";
+  position: relative;
+  text-transform: uppercase;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url(./img/intro/noise-transparent.png) repeat 0 0;
+  background-repeat: repeat;
+  animation: 1s steps(4) bg-animation 0.5s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  z-index: 999;
+  pointer-events: none;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+::-moz-selection {
+  background: #1226aa;
+}
+::selection {
+  background: #1226aa;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Pretendard-Medium";
+  position: relative;
+  text-transform: uppercase;
+}
+
+#tabmenu {
+  overflow: hidden;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1226aa;
+  font-family: "MonumentExtended-Ultrabold";
+  font-style: italic;
+}
+#tabmenu ul.menu {
+  color: #fff;
+  font-size: 3.5rem;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: 3px;
+}
+#tabmenu ul.menu li {
+  padding: 10px;
+}
+#tabmenu ul.menu li .glitch {
+  position: relative;
+  mix-blend-mode: lighten;
+}
+#tabmenu ul.menu li .glitch::before,
+#tabmenu ul.menu li .glitch :after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0);
+}
+#tabmenu ul.menu li .glitch:before {
+  left: -1px;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
+}
+#tabmenu ul.menu li .glitch:after {
+  left: 1px;
+  text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+}
+#tabmenu ul.menu li .glitch:hover:before {
+  text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
+  animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
+}
+#tabmenu ul.menu li .glitch:hover:after {
+  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+  animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+}
+#tabmenu .menu_door {
+  width: 450px;
+  height: 750px;
+  background: url(./img/tabmenu/TABMENU.gif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 250px 250px 0 0;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+#publishing_allpage {
+  width: 100vw;
+  height: 100%;
+  background: #010101;
+  position: relative;
+}
+
+.images {
+  position: fixed;
+  left: 5%;
+  top: 30%;
+}
+.images img {
+  position: absolute;
+  height: 55vh;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0.8);
+}
+
+@media screen and (max-width: 516px) {
+  header {
+    z-index: 600;
+    position: fixed;
+    padding: 30px;
+  }
+  header h1 {
+    display: none;
+  }
+  header h1 a {
+    position: absolute;
+  }
+  header h1 img {
+    width: 50px;
+    height: 50px;
+  }
+  header h1.on {
+    display: block;
+  }
+  #tabmenu {
+    overflow: hidden;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #1226aa;
+    font-family: "MonumentExtended-Ultrabold";
+    font-style: italic;
+  }
+  #tabmenu ul.menu {
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: 3px;
+  }
+  #tabmenu ul.menu li {
+    padding: 10px;
+  }
+  #tabmenu .menu_door {
+    display: none;
+  }
+  .wrap {
+    position: absolute;
+    margin-top: 200px;
+    left: 8%;
+  }
+  .wrap ul.list {
+    font-family: "MonumentExtended-Ultrabold";
+    color: transparent;
+  }
+  .wrap ul.list li a {
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+  }
+  .wrap ul.list li a::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    color: #ffdc00;
+    -webkit-text-stroke: 1px #ffdc00;
+    transition: all 0.35s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  }
+  .wrap ul.list [data-animation] a::before,
+  .wrap .list a:hover::before {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 517px) {
+  header {
+    z-index: 600;
+    position: fixed;
+    padding: 50px;
+  }
+  header h1 {
+    display: none;
+  }
+  header h1 img {
+    width: 70px;
+    height: 70px;
+  }
+  header h1.on {
+    display: block;
+  }
+  #tabmenu {
+    overflow: hidden;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #1226aa;
+    font-family: "MonumentExtended-Ultrabold";
+    font-style: italic;
+  }
+  #tabmenu ul.menu {
+    z-index: 1;
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: 3px;
+  }
+  #tabmenu ul.menu li {
+    padding: 10px;
+  }
+  .wrap {
+    position: absolute;
+    margin-top: 200px;
+    right: 8%;
+  }
+  .wrap ul.list {
+    font-family: "MonumentExtended-Ultrabold";
+    color: transparent;
+  }
+  .wrap ul.list li a {
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+  .wrap ul.list li a::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    color: #ffdc00;
+    -webkit-text-stroke: 1px #ffdc00;
+    transition: all 0.35s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  }
+  .wrap ul.list [data-animation] a::before,
+  .wrap .list a:hover::before {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    z-index: 600;
+    position: fixed;
+    padding: 50px;
+  }
+  header h1 {
+    position: absolute;
+    display: none;
+  }
+  header h1 a {
+    position: absolute;
+  }
+  header h1 a img {
+    width: 70px;
+    height: 70px;
+  }
+  header h1.on {
+    display: block;
+  }
+  .wrap {
+    margin-top: 200px;
+    position: absolute;
+    top: 50%;
+    right: 8%;
+  }
+  .wrap ul.list {
+    font-family: "MonumentExtended-Ultrabold";
+    color: transparent;
+  }
+  .wrap ul.list li a {
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+  }
+  .wrap ul.list li a::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    color: #ffdc00;
+    -webkit-text-stroke: 1px #ffdc00;
+    transition: all 0.35s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  }
+  .wrap ul.list [data-animation] a::before,
+  .wrap .list a:hover::before {
+    width: 100%;
+  }
+}/*# sourceMappingURL=publishing_allpage.css.map */
