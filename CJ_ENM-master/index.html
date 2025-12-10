@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CJ ENM</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d2609ab746.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .swiper {
+        overflow: hidden;
+      }
+      .s3swiper .swiper-button-next,
+      .s3swiper .swiper-button-prev {
+        color: #eee;
+      }
+      .s4swiper .swiper-pagination {
+        display: flex;
+        gap: 1.5vw;
+        top: 95%;
+        left: 47%;
+      }
+      .s4swiper .swiper-pagination span {
+        background-color: #eee;
+      }
+
+      /* -----------sect4 pagination */
+      #sect4 .swiper-pagination {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        width: 100%;
+        opacity: 1;
+        z-index: 999;
+      }
+      #sect4 .swiper-pagination-bullet {
+        width: 100%;
+        height: 20%;
+        background: transparent;
+        border-radius: 0;
+        color: #fff;
+        padding: 2% 0;
+        position: relative;
+      }
+      #sect4 .swiper-pagination-bullet:before {
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: #fff;
+        opacity: 0.5;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transition: all 0.5 ease-in-out;
+      }
+      @media screen and (max-width: 516px) {
+        #sect4 .swiper-pagination-bullet {
+          font-size: 2rem;
+          margin-bottom: 3rem;
+        }
+        #sect4 .swiper-pagination-bullet-active:before {
+          width: 80%;
+          left: 10%;
+        }
+      }
+      @media screen and (min-width: 517px) {
+        #sect4 .swiper-pagination-bullet {
+          font-size: 5vw;
+        }
+        #sect4 .swiper-pagination-bullet-active:before {
+          width: 60%;
+          left: 20%;
+        }
+      }
+      @media screen and (min-width: 1195px) {
+        #sect4 .swiper-pagination-bullet {
+          font-size: 3vw;
+        }
+        #sect4 .swiper-pagination-bullet-active:before {
+          width: 40%;
+          left: 30%;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="sect1">
+      <div class="bg"></div>
+      <div class="text">
+        <h1><img src="./img/sparkle.svg" alt="" /></h1>
+        <h3>We live to discover</h3>
+        <h2 class="underline">Untold Originals</h2>
+      </div>
+      <div class="blob-effect">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="min" id="min">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+      </div>
+    </section>
+    <!-- /end sect1 -->
+    <section id="sect2">
+      <div class="inner">
+        <article class="who">
+          <div class="s2logo"><img src="./img/cj_logo 1.png" alt="" /></div>
+          <div class="txt">
+            <h2><span>Who We Are</span></h2>
+            <h3>진정한 독창성이란 무엇일까?</h3>
+            <p class="main">
+              CJ ENM은 그 답을 찾기 위해 1995년부터 끝없는 여정을 시작했습니다.
+              놓쳐서는 안 될 드라마, 시상식을 휩쓰는 영화, 매일 챙겨 보고 싶은
+              리얼리티 프로그램 등을 제작하며 독창적인 영역을 개척해온 CJ ENM은
+              차세대 K-팝스타를 발굴하고, 새로운 돌풍을 일으킬 애니메이션과
+              미국의 브로드웨이와 영국의 웨스트엔드, 다른 아시아 지역을 포함한
+              세계 무대에 선보일 수준 높은 뮤지컬을 제작하여 그 무대를 점점 더
+              넓히고 있습니다. 진정한 독창성은 나이와 세대, 언어의 장벽마저
+              뛰어넘습니다. 새로운 캐릭터와 스토리에 모두가 공감할 때 우리는
+              하나가 됩니다.
+            </p>
+            <figure><img src="./img/Group 99.png" alt="" /></figure>
+            <p class="end">
+              낯선 것에서 찾아낸 공감대를 사랑하고 그 과정에서 기쁨을 느끼는 CJ
+              ENM은 우리만의 독창적인 것, Untold Originals를 찾아 오늘도 끝없는
+              여정을 이어갑니다.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- /end sect2 -->
+    <section id="sect3">
+      <div class="bg"></div>
+      <div class="text">
+        <h2>Culture</h2>
+        <p>
+          CJ ENM은 우리만의 독창성으로 세계와 공감하고 시대와 교감하며, 글로벌
+          엔터테인먼트 리딩 컴퍼니로서 사명감을 잃지 않고 나아갑니다. <br />
+          끊임없이 변화하는 세상과 불확실한 미래에도 흔들리지 않고 나아가는 힘의
+          완성은 우리 안에서 시작됩니다.
+        </p>
+      </div>
+
+      <div class="swiper mySwiper s3swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/sect3_01.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/sect3_02.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/sect3_03.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="mobile">
+        <ul>
+          <li class="empathy">
+            <a href="#"
+              ><p>The Power of Empathy</p>
+              <div class="wrap">
+                <span>경계를 뛰어넘는 힘,</span><span class="bold">공감력</span>
+              </div>
+              <p>수용, 다각도, 유연함, 예민함</p></a
+            >
+          </li>
+          <li class="originality">
+            <a href="#"
+              ><p>The Power of Originality</p>
+              <div class="wrap">
+                <span>한계를 뛰어넘는 힘,</span><span>독창성</span>
+              </div>
+              <p>호기심, 통찰력, 차별화, 매력</p>
+            </a>
+          </li>
+          <li class="commitment">
+            <a href="#">
+              <p>The Power of Commitment</p>
+              <div class="wrap">
+                <span>기대를 뛰어넘는 힘,</span><span>사명감</span>
+              </div>
+              <p>주도성, 자율, 도전, 성장</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /end sect3 -->
+
+    <section id="sect4">
+      <div class="inner">
+        <h2>Channel Discover</h2>
+        <article>
+          <!-- li마다 a에 개인페이지 href, #채널명 -->
+          <!-- <ul class="tab-list flex">
+            <li class="tab-item on"><a href="#">#즐거움엔_tvN</a></li>
+            <li class="tab-item"><a href="#">#MusicMakesOne_Mnet</a></li>
+            <li class="tab-item"><a href="#">#ContentsNo1_OCN</a></li>
+          </ul> -->
+
+          <!-- tablist와 같이 bg로 깔릴 img -->
+          <div class="swiper-container swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- li에 background-image로 -->
+              <div class="swiper-slide slide1">
+                <a href="./tvN/index.html" class="btn" target="_blank">
+                  <span>홈페이지 바로가기</span>
+                </a>
+              </div>
+              <div class="swiper-slide slide2">
+                <a href="./mnet/mnet.html" class="btn" target="_blank">
+                  <span>홈페이지 바로가기</span>
+                </a>
+              </div>
+              <div class="swiper-slide slide3">
+                <a href="./OCN/OCN.html" class="btn" target="_blank">
+                  <span>홈페이지 바로가기</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- /end sect4 -->
+    <section id="sect5">
+      <div class="inner">
+        <article class="flex">
+          <!-- <div class="slogan flex">
+            <p class="highlight">
+              We love to find the familiar 
+              within the unfamiliar and the 
+              thrill that comes with it.
+            </p>
+          </div> -->
+          <div class="slogan flex">
+            <p class="mark underline">We love to find the familiar</p>
+            <p class="mark underline">within the unfamiliar and the thrill</p>
+            <p class="mark underline">that comes with it.</p>
+          </div>
+        </article>
+      </div>
+      <!-- /end sect5 inner -->
+      <footer>
+        <div class="footernav">
+          <div class="info">
+            <ul>
+              <li>개인정보방침</li>
+              <li>이용약관</li>
+              <li>회사주소</li>
+            </ul>
+            <p>copyright</p>
+          </div>
+          <ul class="sns">
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+      </footer>
+      <!-- /end footer -->
+    </section>
+    <!-- /end sect5 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- swiper sect3 -->
+    <script>
+      // ----- swiper sect3
+      var swiper = new Swiper(".s3swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      // ------- /end sect3 swiper -------
+    </script>
+    <script>
+      var bullet = ["#Trend_Leader_tvN", "#Global_Kpop_Mnet", "#Contents_No1_OCN"];
+      var swiper2 = new Swiper("#sect4 .mySwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<div class="' +
+              className +
+              '"><span>' +
+              bullet[index] +
+              "</span></div>"
+            );
+          },
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+      });
+      // ------- /end sect4 swiper -------
+    </script>
+  </body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글로벌 NO.1 음악채널 - Mnet</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./mnet2.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        background: transparent;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      @media (max-width: 516px) {
+        .swiper-button-next {
+          right: 20px;
+          top: 30%;
+          transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+          left: 20px;
+          top: 30%;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="sect1">
+      <div class="ham">
+        <div class="xmark">
+          <a href="#"><img src="./images/x-mark.png" alt="" /></a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mnet</a></li>
+          <li><a href="#">tvN</a></li>
+          <li><a href="#">OCN</a></li>
+        </ul>
+      </div>
+      <div class="intro">
+        <header>
+          <h1 class="logo">
+            <a href="#"><img src="./images/Mnet_w.png" alt="logo" /></a>
+          </h1>
+          <h1 class="menu">
+            <a href="#"><img src="./images/bars-solid2.png" alt="menu" /></a>
+          </h1>
+        </header>
+
+        <div class="desc">
+          <h1><img src="./images/Mnet_w.png" alt="" /></h1>
+          <h2>Music Makes One</h2>
+          <!-- <p>Mnet은 독보적인 기획과 연출을 통해 계속해서 새로운 포맷 및 콘텐츠를 발굴하며 그 스펙트럼을 확대해가고 있습니다. <br>
+                엠넷의 크리에이티브가 담긴 음악 예능, 오디션, 차트쇼 등 다양한 프로그램으로 <br>
+                K-POP 트렌드를 이끌며 음악 콘텐츠의 방향성을 제시하고 있습니다.</p> -->
+        </div>
+
+        <div class="fullvideo">
+          <div class="gradient"></div>
+          <video
+            src="./images/videoplayback_kpop.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+      </div>
+    </section>
+    <section id="sect2">
+      <h2>Contents Category</h2>
+      <div class="tabmenu">
+        <p class="on">#오디션/서바이벌</p>
+        <p>#특별프로그램</p>
+        <p>#차트쇼</p>
+      </div>
+      <div class="contents">
+        <div class="tab tab1 on">
+          <div class="main audition">
+            <div class="audimg1 audimg"></div>
+          </div>
+          <div class="info">
+            <div class="pg pg1">
+              <h4>퀸덤2</h4>
+              <p>
+                한날한시, 글로벌 차트 정복에 나선 K-POP 대표 걸그룹들! 편견을
+                깨고 한계를 넘어 무대 위에서 펼쳐질 눈부신 컴백 전쟁! 오직
+                음악으로 전 세계를 사로잡을 단 하나의 K-POP퀸은 누가 될 것인가?
+              </p>
+            </div>
+            <div class="pg pg1 on">
+              <h4>스트릿 우먼 파이터</h4>
+              <p>
+                대한민국 최고의 스트릿 댄스 크루를 찾기 위한 리얼리티 서바이벌.
+                잔혹한 스트릿에서 살아남기 위한 여성 댄서들의 자존심을 건 생존
+                경쟁이 시작된다!
+              </p>
+            </div>
+            <div class="pg pg1">
+              <h4>걸스플래닛999</h4>
+              <p>
+                한국,중국,일본의 소녀들이 글로벌 걸그룹의 꿈을 이루기 위해
+                국가와 지역을 초월한 가상의 세계 걸스플래닛에 모여 하나로
+                연결된다! 당신은 누구의 꿈을 지킬 것인가
+              </p>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="box box1" data-idx="0">
+              <a href="./images/queendom_img.png"
+                ><img src="./images/queendom_thumb.jpg" alt=""
+              /></a>
+              <!-- <img src="./images/999_thumb.jpg" alt="" />
+              <img src="./images/swf_thumb.png" alt="" /> -->
+            </div>
+            <div class="box box1 on" data-idx="1">
+              <a href="./images/swf_img.png"
+                ><img src="./images/swf_thumb.jpg" alt=""
+              /></a>
+              <!-- <img src="./images/swf_thumb.png" alt="" />
+              <img src="./images/queendom_thumb.jpg" alt="" /> -->
+            </div>
+            <div class="box box1" data-idx="2">
+              <a href="./images/999_img.jpeg"
+                ><img src="./images/999_thumb.jpg" alt=""
+              /></a>
+              <!-- <img src="./images/swf_thumb.png" alt="" />
+              <img src="./images/queendom_thumb.jpg" alt="" /> -->
+            </div>
+          </div>
+        </div>
+        <div class="tab tab2">
+          <div class="main awards">
+            <div class="awdimg1 awdimg"></div>
+          </div>
+          <div class="info">
+            <div class="pg pg2">
+              <h4>아티스탁 게임</h4>
+              <p>
+                전세계 시청자들이 다양한 개성을 가진 아티스트들의 재능에
+                투자하는 형식의 양방향 소통기반 신개념 음악 서바이벌
+              </p>
+            </div>
+            <div class="pg pg2 on">
+              <h4>Mnet Asian Music Awards</h4>
+              <p>
+                글로벌 K-POP의 역사를 함께 해 온 Mnet ASIAN MUSIC AWARDS가
+                음악을 통한 더 큰 세상을 꿈꾸며 World's No.1 K-POP Awards, MAMA
+                AWARDS로 거듭납니다.
+              </p>
+            </div>
+            <div class="pg pg2">
+              <h4>LA에 있지</h4>
+              <p>LA로 떠난 ITZY. 찐친들의 리얼한 우정 여행기 같이 떠나요!</p>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="box box2" data-idx="1">
+              <a href="./images/arti_img.jpg"
+                ><img class="on" src="./images/arti_thumb.png" alt=""
+              /></a>
+            </div>
+            <div class="box box2 on" data-idx="2">
+              <a href="./images/mama_img.jpeg"
+                ><img class="on" src="./images/mama_thumb.jpeg" alt=""
+              /></a>
+            </div>
+            <div class="box box2" data-idx="3">
+              <a href="./images/itzy_img.jpg"
+                ><img class="on" src="./images/itzy_thumb.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="tab tab3">
+          <div class="main chartshow">
+            <div class="chartimg1 chartimg"></div>
+          </div>
+          <div class="info">
+            <div class="pg pg3">
+              <h4>TMI NEWS SHOW</h4>
+              <p>
+                세상 모든 사람들이 궁금해하는 스타의 TMI! 과몰입 유발 아이돌
+                차트 Mnet [TMI NEWS SHOW]
+              </p>
+            </div>
+            <div class="pg pg3 on">
+              <h4>M Countdown</h4>
+              <p>
+                가요 트렌드를 이끄는 대한민국 대표 가수들을 만날 수 있는 World
+                No.1 K-POP Chart Show!
+              </p>
+            </div>
+            <div class="pg pg3">
+              <h4>TMI NEWS</h4>
+              <p>
+                '연.잘.알[연예계 잘 아는]'로 소문난 전현무, 장도연이 아이돌 정보
+                과부화 차트쇼 [TMI NEWS]에서 모두 공개한다!
+              </p>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <div class="box box3" data-idx="0">
+              <a href="./images/tmi_img.jpg"
+                ><img class="on" src="./images/tmi_thumb.png" alt=""
+              /></a>
+            </div>
+            <div class="box box3 on" data-idx="1">
+              <a href="./images/mcount_img.jpg"><img src="./images/mcount_thumb.jpg" alt="" /></a>
+            </div>
+            <div class="box box3" data-idx="2">
+              <a href="./images/news_img.png"><img src="./images/news_thumb.jpg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sect3">
+      <h2>Featured Contents</h2>
+      <!-- Swiper -->
+      <div class="bk-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2 class="tt">01</h2>
+              <div class="preview">
+                <h4>TMI NEWS SHOW</h4>
+                <p>
+                  세상 모든 사람들이 궁금해하는 스타의 TMI! 과몰입 유발 아이돌
+                  차트 Mnet [TMI NEWS SHOW]
+                </p>
+              </div>
+              <a href="#"
+                ><video
+                  src="./images/tmi_news_video.mp4"
+                  autoplay
+                  loop
+                  muted
+                ></video
+              ></a>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="tt">02</h2>
+              <div class="preview">
+                <h4>스트릿 맨 파이터</h4>
+                <p>
+                  Mnet Original Dance Series 몸으로 증명하는 남자들의 춤 싸움!
+                  [스트릿 맨 파이터] Ready? Fight!
+                </p>
+              </div>
+              <a href="#"
+                ><video src="./images/smf_video.mp4" autoplay loop muted></video
+              ></a>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="tt">03</h2>
+              <div class="preview">
+                <h4>LA에있지</h4>
+                <p>LA로 떠난 ITZY. 찐친들의 리얼한 우정 여행기 같이 떠나요!</p>
+              </div>
+              <a href="#"
+                ><video
+                  src="./images/LA_ITZY_video.mp4"
+                  autoplay
+                  loop
+                  muted
+                ></video
+              ></a>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="tt">04</h2>
+              <div class="preview">
+                <h4>TMI NEWS SHOW</h4>
+                <p>
+                  세상 모든 사람들이 궁금해하는 스타의 TMI! 과몰입 유발 아이돌
+                  차트 Mnet [TMI NEWS SHOW]
+                </p>
+              </div>
+              <a href="#"
+                ><video
+                  src="./images/tmi_news_video.mp4"
+                  autoplay
+                  loop
+                  muted
+                ></video
+              ></a>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="tt">05</h2>
+              <div class="preview">
+                <h4>스트릿 맨 파이터</h4>
+                <p>
+                  Mnet Original Dance Series 몸으로 증명하는 남자들의 춤 싸움!
+                  [스트릿 맨 파이터] Ready? Fight!
+                </p>
+              </div>
+              <a href="#"
+                ><video src="./images/smf_video.mp4" autoplay loop muted></video
+              ></a>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="tt">06</h2>
+              <div class="preview">
+                <h4>LA에있지</h4>
+                <p>LA로 떠난 ITZY. 찐친들의 리얼한 우정 여행기 같이 떠나요!</p>
+              </div>
+              <a href="#"
+                ><video
+                  src="./images/LA_ITZY_video.mp4"
+                  autoplay
+                  loop
+                  muted
+                ></video
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination-->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section id="sect4">
+      <h2>New Contents</h2>
+      <div class="list">
+        <div class="new new1">
+          <div class="newbox"><img src="./images/showme.png" alt="" /></div>
+          <p>Show me the money 11</p>
+        </div>
+        <div class="new new2">
+          <div class="newbox"><img src="./images/iland2.png" alt="" /></div>
+          <p class="on">i-LAND 2</p>
+        </div>
+        <div class="new new3">
+          <div class="newbox"><img src="./images/boysplanet.png" alt="" /></div>
+          <p>Boys Planet</p>
+        </div>
+      </div>
+      <div class="sns">
+        <div class="snsimg">
+          <img src="./images/choom.png" alt="스튜디오춤" />
+        </div>
+        <div class="snsimg">
+          <img src="./images/mnet_kpop.png" alt="Mnet k-pop" />
+        </div>
+        <div class="snsimg">
+          <img src="./images/mplus.png" alt="Mnet plus" />
+        </div>
+        <div class="snsimg"><img src="./images/m2.png" alt="M2" /></div>
+        <div class="snsimg"><img src="./images/mwave.png" alt="Mwave" /></div>
+      </div>
+    </section>
+    <section id="sect5">
+      <div class="family">
+        <div class="tvn">
+          <a href="">바로가기</a>
+
+          <div class="tvnimg">
+            <img src="./images/tvn_banner_img.png" alt="" />
+          </div>
+          <div class="tvnlogo">
+            <img src="./images/tvn_m_logo.png" alt="" />
+          </div>
+        </div>
+        <div class="ocn">
+          <a href="">바로가기</a>
+          <div class="ocnimg">
+            <img src="./images/ocn_banner_img.png" alt="" />
+          </div>
+          <div class="ocnlogo">
+            <img src="./images/ocn_m_logo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="row row1">
+          <div class="col">
+            <p>문의하기 |</p>
+            <p>온라인 제보 |</p>
+            <p>시청자 위원회 |</p>
+            <p>법적고지 |</p>
+            <p>영상정보처리기기운영/관리방침 |</p>
+            <p>이메일무단수집거부 |</p>
+            <p>개인정보처리방침 |</p>
+          </div>
+          <div class="col2">
+            <img src="./images/you.svg" alt="" />
+            <img src="./images/fb.svg" alt="" />
+            <img src="./images/insta.svg" alt="" />
+          </div>
+        </div>
+        <div class="row row2">
+          <p>(주)씨제이이엔엠 | 대표이사 : 강호성, 윤상현</p>
+          <p>주소 : (03926) 서울시 마포구 상암산로 66</p>
+          <p>사업자 등록번호 : 106-81-51510 | 개인정보 보호책임자 : 강봉관</p>
+        </div>
+        <div class="row">
+          <p>© CJ ENM. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./mnet.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var workSwiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        direction: getDirection1(),
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          517: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1195: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
+        on: {
+          resize: function () {
+            workSwiper.changeDirection(getDirection1());
+          },
+        },
+      });
+      function getDirection1() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 516 ? "vertical" : "horizontal";
+
+        return direction;
+      }
+    </script>
+  </body>
+</html>
