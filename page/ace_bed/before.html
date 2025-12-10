@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      li{
+        list-style: none;
+        color: #000
+      }
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+
+      a.arrow img {
+        width: 100px;
+      }
+      a.prev {
+        position: absolute;
+        left: 1%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+        z-index: 999;
+      }
+      a.next {
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+        z-index: 999;
+      }
+      a.prev.stop,
+      a.next.stop {
+        opacity: 0.2;
+      }
+
+      .slideContainer {
+        width: 800px;
+        margin: 250px auto;
+        overflow: hidden;
+      }
+      .slideWrap {
+        width: 400%;
+        height: 500px;
+        display: flex;
+        position: relative;
+      }
+      .slideWrap video {
+        width: 100%;
+        vertical-align: top;
+      }
+
+      ul.menu {
+        position: absolute;
+        left: 10rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      ul.menu li {
+        cursor: pointer;
+        margin-bottom: 27px;
+      }
+      ul.menu li.on {
+        font-size: 22px;
+        color: royalblue;
+        font-weight: bold;
+      }
+
+      .contents{
+       position: absolute;
+       color: #fff;
+       left: 10%;
+       top: 10%;
+       text-align: left;
+      }
+      .contents p{
+        border: 1px solid #fff;
+        border-radius: 15px;
+        font-size: 14px;
+        display: inline-block;
+        padding: 3px 10px;
+      }
+      #sect3 h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 200;
+      }
+      .contents h3{
+        font-size: 16px;
+      }
+      .contents h4{
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+    
+      .swiper {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .swiper-slide {
+        position: relative;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="sect2">
+      <div class="slideContainer">
+        <div class="slideWrap">
+          <div class="slide on">
+            <video src="./img/1440_bg01.mp4" autoplay muted loop></video>
+          </div>
+          <div class="slide">
+            <video src="./img/1440_bg02.mp4" autoplay muted loop></video>
+          </div>
+          <div class="slide">
+            <video src="./img/1440_bg03.mp4" autoplay muted loop></video>
+          </div>
+          <div class="slide">
+            <video src="./img/1440_bg04.mp4" autoplay muted loop></video>
+          </div>
+        </div>
+      </div>
+      <a href="" class="prev arrow">
+        <img
+          src="./img/3994376_arrow_back_left_navigation_previous_icon.svg"
+          alt=""
+        />
+      </a>
+      <a href="" class="next arrow">
+        <img
+          src="./img/3994400_arrow_forward_navigation_next_right_icon.svg"
+          alt=""
+        />
+      </a>
+      <ul class="menu">
+        <li class="on">HYBRID Z SPRING</li>
+        <li>5 FREE SYSTEM</li>
+        <li>NEW MATERIAL</li>
+        <li>ECO & HALTH</li>
+      </ul>
+    </section>
+    <section id="sect3">
+      <h1>
+        ACE COLLECTION
+      </h1>
+      <ul class="category">
+        <li><a href="#">신제품</a></li>
+        <li><a href="#">추천제품</a></li>
+      </ul>
+      <div class="slideTab">
+        <div class="swiper slide2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="contents">
+                <p>호텔형침대</p><p>패브릭침대</p>
+                <h2>BMA-1165</h2>
+                <h3>자유로운 공간 구성의 실용적 디자인 호텔형 침대 BMA-1165</h3>
+                <h4>VIEW</h4>
+              </div>
+              <img src="./img/22033005470034886752.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="contents">
+                <p>호텔형침대</p><p>패브릭침대</p>
+                <h2>BMA-1165</h2>
+                <h3>자유로운 공간 구성의 실용적 디자인 호텔형 침대 BMA-1165</h3>
+                <h4>VIEW</h4>
+              </div>
+              <img src="./img/22082303221307905871.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="contents">
+                <h2>ACE BELLA-Ⅲ</h2>
+                <h3>머리부터 발끝까지 견고하게 지지하다</h3>
+                <h4>VIEW</h4>
+              </div>
+              <img src="./img/22052302370787653582.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper slide3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      //   해야할 것
+      // 1. [첫번째 슬라이드]prev 버튼 비활성화
+      // 2. [마지막 슬라이드]next 버튼 비활성화
+      // 3. 비활성화 버튼에 투명도 낮추기[class 지정]
+      // 4. 비활성화 버튼 클릭되지않게 지정
+      // 5. next 버튼이 클릭되면 이전 버튼 활성화
+      // 5. prev 버튼이 클릭되면 next 버튼 활성화
+
+      // let idx = 0;
+      // let slideCount = $(".slide").length;
+      // $(".menu li").click(function () {
+      //   $(".menu li").removeClass("on");
+      //   $(this).addClass("on");
+      //   idx = $(this).index();
+
+      //   $(".slideWrap").animate({ left: idx * -100 + "%" });
+      // });
+
+      // $("a.next").click(function (e) {
+      //   e.preventDefault();
+      //   $(".menu li").removeClass("on");
+      //   $(".menu li").eq(idx).addClass("on");
+      //   idx++;
+      //   if (idx >= slideCount) {
+      //     $(this).css({ "pointer-events": "none" });
+      //   } else {
+      //     $(".slideWrap").animate({ left: idx * -100 + "%" });
+      //   }
+      // });
+
+      const prevBtn = $("a.prev");
+      const nextBtn = $("a.next");
+      let idx = 0; //초기화 숫자
+      eventStop(prevBtn);
+      // ----------------------------------------
+      nextBtn.click(function (e) {
+        e.preventDefault();
+        ++idx;
+        eventGo(prevBtn);
+        $(".menu li").removeClass("on");
+        $(".menu li").eq(idx).addClass("on");
+        $(".slideWrap").animate({ left: idx * -100 + "%" });
+        if (idx == 3) {
+          evetnStop($(this));
+        }
+      });
+      // ---------------------------------------
+      prevBtn.click(function (e) {
+        e.preventDefault();
+        --dix;
+        $(".menu li").removeClass("on");
+        $(".menu li").eq(idx).addClass("on");
+        $(".slideWrap").animate({ left: idx * -100 + "%" });
+        if (dix == 0) {
+          eventStop$($(this));
+        }
+      });
+      // ----------------------------------------
+      $(".menu li").click(function () {
+        eventGo(prevBtn);
+        eventGo(nextBtn);
+        $(".menu li").removeClass("on");
+        $(this).addClass("on");
+        idx = $(this).index();
+        if (idx == 3) {
+          eventStop(nextBtn);
+        }
+        if (idx == 0) {
+          eventStop(prevBtn);
+        }
+        $(".slideWrap").animate({ left: idx * -100 + "%" });
+      });
+      // ----------------------------------------
+      function eventStop(arrow) {
+        // alert("stop 호출")
+        $(arrow).css({ "pointer-events": "none" });
+        // 같은 개체를 써도 같은 개체로 인식을 못하고 다른 개체로 인식함. -> 변수로 쓰기
+        // this 값을 받아야돼서 변수 지정한거임
+        arrow.addClass("stop");
+      }
+      function eventGo(arrow) {
+        $(arrow).css({ "pointer-events": "none" });
+        arrow.removeClass("stop");
+      }
+    
+    
+    
+      var swiper = new Swiper(".slide2", {
+        scrollbar: {
+          direction: "vertical",
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+
+    </script>
+  </body>
+</html>
