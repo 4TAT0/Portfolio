@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splatoon</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <audio src="./img/splatoon_ost.mp3" controls autoplay loop></audio>
+    <ul class="nav">
+      <li><span></span><a href="#">Splatoon1</a></li>
+      <li><span></span><a href="#">Splatoon2</a></li>
+      <li><span></span><a href="#">Splatoon Octo Expansion</a></li>
+      <li><span></span><a href="#">Splatoon3</a></li>
+    </ul>
+    <section>
+      <article class="on" id="sect1">
+        <div class="inner">
+          <img src="./img/bg (1).png" class="bg1" alt="" />
+          <img src="./img/bg.png" class="bg2" alt="" />
+          <img src="./img/splatoon1_02.png" class="ink_man" alt="" />
+          <img src="./img/splatoon1_03.png" class="ink_girl" alt="" />
+          <img src="./img/splatoon1.png" alt="" class="super seao" />
+          <img src="./img/splatoon1_05.png" alt="" class="squid" />
+          <img src="./img/splatoon1_04.png" alt="" class="logo" />
+        </div>
+      </article>
+      <article id="sect2">
+        <div class="inner">
+          <img src="./img/splatoon2.png" class="logo" alt="" />
+          <img src="./img/splatoon2_02.png" class="ink_girl01" alt="" />
+          <img src="./img/splatoon2_03.png" class="super denta" alt="" />
+          <img src="./img/splatoon2_07.png" class="ink02" alt="" />
+          <img src="./img/splatoon2_09.png" class="squid" alt="" />
+          <img src="./img/top_bnr_what_deco.png" class="ink" alt="" />
+          <img src="./img/top_bnr_what_deco.png" class="ink2" alt="" />
+        </div>
+      </article>
+      <article id="sect3">
+        <div class="inner">
+          <img src="./img/splatoon2_oct.png" class="oct" alt="" />
+          <img src="./img/splatoon2_oct4.png" class="mic" alt="" />
+          <img src="./img/splatoon2_06.png" class="logo" alt="" />
+          <img src="./img/splatoon2_oct2.png" class="super oct2" alt="" />
+          <img src="./img/6.png" class="ink" alt="" />
+          <img src="./img/6.png" class="ink2" alt="" />
+        </div>
+      </article>
+      <article id="sect4">
+        <div class="inner">
+          <img src="./img/splatoon3_07.png" class="samhap" alt="" />
+          <img src="./img/splatoon3.png" class="logo" alt="" />
+          <img src="./img/splatoon3_03.png" class="ink" alt="" />
+          <img src="./img/splatoon3_09.png" class="slamon" alt="" />
+          <img src="./img/splatoon3_08.png" class="super oct" alt="" />
+          <img src="./img/splatoon3_10.png" class="squid" alt="" />
+          <img src="./img/3.png" class="ink1" alt="" />
+          <img src="./img/7.png" class="ink2" alt="" />
+        </div>
+      </article>
+    </section>
+    <script>
+      const h1Elem = document.querySelector("h1");
+      const articleElem = document.querySelectorAll("article");
+      const navLi = document.querySelectorAll(".nav li");
+
+      window.addEventListener("scroll", function () {
+        let scrTop = this.scrollY;
+        // h1Elem.innerText = scrTop;
+
+        // articleElem[0].style.trasnform='translateZ('+(0+scrTop)+'px)'
+        // articleElem[1].style.trasnform='translateZ('+(-5000+scrTop)+'px)'
+        // articleElem[2].style.trasnform='translateZ('+(-10000+scrTop)+'px)'
+        // articleElem[3].style.trasnform='translateZ('+(-15000+scrTop)+'px)'
+        // articleElem[4].style.trasnform='translateZ('+(-20000+scrTop)+'px)'
+
+        articleElem.forEach((article, i) => {
+          console.log(scrTop * i);
+          articleElem[i].style.transform =
+            "translateZ(" + (-5000 * i + scrTop) + "px)";
+
+          //   if (scrTop > 0 && scrTop < 5000) {
+          //     liRemove();
+          //     navLi[0].classList.add("on");
+          //     articleRemove()
+          //     articleElem[0].classList.add("on")
+          //   }
+          //   if (scrTop >= 5000 && scrTop < 10000) {
+          //     liRemove();
+          //     navLi[1].classList.add("on");
+          //     articleRemove()
+          //     articleElem[1].classList.add("on")
+          //   }
+          //   if (scrTop >= 10000 && scrTop < 15000) {
+          //     liRemove();
+          //     navLi[2].classList.add("on");
+          //     articleRemove()
+          //     articleElem[2].classList.add("on")
+          //   }
+
+          if (scrTop >= i * 5000 - 1000 && scrTop < (i + 1) * 5000) {
+            liRemove();
+            navLi[i].classList.add("on");
+            articleRemove();
+            articleElem[i].classList.add("on");
+          }
+
+          // article.querySelector(".super").style.transform =
+          //   // "translate(-" + x * 50 + "px, -" + y * 50 + "px)";
+          //   `translate(-${transValue.x * 50}px, -${transValue.y * 50}px)`;
+
+          // article.addEventListener("mousemove", function (e) {
+          //   // let container = article.getBoundingClientRect();
+          //   // let x = e.clientX / window.innerWidth;
+          //   // let y = e.clientY / window.innerHeight;
+          //   const moveAnimate = {
+          //     x: e.clientX - Math.round(container.left),
+          //     y: e.clientY - Math.round(container.top),
+          //   };
+          //   const transValue = {
+          //     x: moveAnimate.x / 100,
+          //     y: moveAnimate.x / 150,
+          //   };
+          // });
+        });
+      });
+
+      navLi.forEach((li, i) => {
+        li.addEventListener("click", function (e) {
+          e.preventDefault();
+          let moveTop = i * 5000;
+          window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
+        });
+      });
+
+      function liRemove() {
+        navLi.forEach((aEelem) => {
+          aEelem.classList.remove("on");
+        });
+      }
+      function articleRemove() {
+        articleElem.forEach((article) => {
+          article.classList.remove("on");
+        });
+      }
+
+      let seao = document.querySelector(".seao");
+      let denta = document.querySelector(".denta");
+      let oct = document.querySelector("#sect3 .oct2");
+      let oct2 = document.querySelector("#sect4 .oct");
+
+      // console.log(seao.getBoundingClientRect)
+
+      //   window.addEventListener('mousemove', function(e) {
+      // let x = e.clientX / window.innerWidth;
+      // let y = e.clientY / window.innerHeight;
+      // console.log(x+','+y);
+      // seao.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+      // // seao.style.transform = `translate(-${x-300} px,${y}px)`;
+
+      // denta.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+      // oct.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+      // oct2.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+
+      //     miracle.forEach((miracle, i) => {
+      //       window.addEventListener('mousemove', function(e) {
+      //     let x = e.clientX / window.innerWidth;
+      //     let y = e.clientY / window.innerHeight;
+      //     // console.log(x+','+y);
+      //     miracle.querySelector('.supp').style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+      //     });
+      // }
+
+      // );
+
+      // articleElem.forEach((article) => {
+      //   article.addEventListener("mousemove", function (e) {
+      //     let container = article.getBoundingClientRect();
+      //     const moveAnimate = {
+      //       x: e.clientX - Math.round(container.left),
+      //       y: e.clientY - Math.round(container.top),
+      //     };
+
+      //     const transValue = {
+      //       x: moveAnimate.x / 100,
+      //       y: moveAnimate.x / 150,
+      //     };
+      //     console.log(article.querySelector(".obj1-1"));
+      //     console.log(transValue.x + "," + transValue.y);
+      //     article.querySelector(".obj1-1").style.transform = `translate(${
+      //       transValue.x * 3
+      //     }px,${transValue.y * 3}px)`;
+      //     article.querySelector(".obj1-2").style.transform = `translate(-${
+      //       transValue.x * 3
+      //     }px,-${transValue.y * 3}px)`;
+      //   });
+      // });
+    </script>
+  </body>
+</html>

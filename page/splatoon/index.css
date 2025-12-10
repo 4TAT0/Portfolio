@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import "/reset.css";
+@font-face {
+  font-family: "splatoon2";
+  src: url(./스플래2K.ttf);
+}
+audio {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+
+body {
+  height: 16000px;
+  font-family: "splatoon2";
+  background-image: url(./img/bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul.nav {
+  position: fixed;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9990;
+}
+
+ul.nav li {
+  margin-bottom: 20px;
+  display: flex;
+  height: 38px;
+  align-items: center;
+  position: relative;
+  width: 240px;
+  color: #fff;
+}
+
+ul.nav li:hover span,
+ul.nav li.on span {
+  width: 100%;
+}
+
+ul.nav li.on span a {
+  width: 100%;
+}
+
+.nav li span {
+  display: inline-block;
+  width: 5px;
+  height: 30px;
+  margin-right: 1rem;
+  transition: 0.35s;
+  transform: skewX(-15deg);
+  z-index: -1;
+  position: absolute;
+}
+
+.nav li:nth-child(1) span {
+  background: #aadc00;
+}
+
+.nav li:nth-child(2) span {
+  background: #ff3f7b;
+}
+
+.nav li:nth-child(3) span {
+  background: #27de89;
+}
+
+.nav li:nth-child(4) span {
+  background: #eee927;
+}
+
+.nav li:nth-child(1):hover {
+  color: #000;
+}
+
+.nav li:nth-child(4):hover {
+  color: #000;
+}
+
+.nav li:hover span {
+  width: 100%;
+}
+
+ul.nav li a {
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+section {
+  position: fixed;
+  width: 1400px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 2500px;
+  z-index: 1;
+}
+
+article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.35s;
+}
+article .inner {
+  width: 100vw;
+  height: 100vh;
+}
+article img {
+  position: absolute;
+}
+article:nth-child(1) img.bg1 {
+  left: 0;
+  top: 0;
+  width: 300px;
+}
+article:nth-child(1) img.bg2 {
+  right: 2%;
+  top: 5%;
+  z-index: -2;
+  width: 200px;
+}
+article:nth-child(1) img.logo {
+  width: 450px;
+  left: 50%;
+  top: -10%;
+  transform: translateX(-50%);
+}
+article:nth-child(1) img.seao {
+  height: 650px;
+  left: 50%;
+  bottom: -3%;
+  transform: translate(-50%);
+  transition: 0.35s;
+}
+article:nth-child(1) img.ink_man {
+  right: -10%;
+  bottom: 0%;
+  height: 560px;
+}
+article:nth-child(1) img.ink_girl {
+  left: -5%;
+  bottom: -10%;
+  height: 570px;
+}
+article:nth-child(1) img.squid {
+  left: 10%;
+  bottom: -20%;
+  z-index: -1;
+  width: 1100px;
+}
+article:nth-child(2) img.logo {
+  width: 450px;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+article:nth-child(2) img.denta {
+  height: 600px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+}
+article:nth-child(2) img.ink02 {
+  z-index: -2;
+  left: -8%;
+  bottom: 5%;
+  height: 900px;
+}
+article:nth-child(2) img.ink_girl01 {
+  right: -5%;
+  bottom: -5%;
+  z-index: -1;
+  width: 500px;
+  transform: scaleX(-1);
+}
+article:nth-child(2) img.squid {
+  right: -20%;
+  top: -15%;
+}
+article:nth-child(2) img.ink {
+  right: 5%;
+  top: 5%;
+}
+article:nth-child(2) img.ink2 {
+  bottom: 10%;
+}
+article:nth-child(3) img.logo {
+  width: 550px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+article:nth-child(3) img.oct {
+  height: 800px;
+  left: 0%;
+  bottom: 0;
+}
+article:nth-child(3) img.mic {
+  z-index: -2;
+  right: 2%;
+  bottom: 0%;
+  height: 500px;
+  transform: scaleX(-1);
+}
+article:nth-child(3) img.oct2 {
+  left: 55%;
+  bottom: 15%;
+  z-index: -1;
+  width: 250px;
+  transform: rotate(20deg);
+}
+article:nth-child(3) img.ink {
+  width: 250px;
+  right: 0;
+  top: 0;
+}
+article:nth-child(3) img.ink2 {
+  width: 200px;
+  bottom: 10%;
+  left: 25%;
+}
+article:nth-child(4) img.samhap {
+  width: 650px;
+  left: 50%;
+  top: -1%;
+  transform: translate(-50%);
+}
+article:nth-child(4) img.logo {
+  height: 400px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+article:nth-child(4) img.ink {
+  left: -5%;
+  bottom: 10%;
+  height: 470px;
+}
+article:nth-child(4) img.slamon {
+  left: 20%;
+  bottom: 10%;
+  width: 100px;
+}
+article:nth-child(4) img.oct {
+  right: -20%;
+  bottom: -15%;
+  width: 1000px;
+}
+article:nth-child(4) img.squid {
+  width: 350px;
+  left: -15%;
+  top: -20%;
+}
+article:nth-child(4) img.ink1 {
+  width: 280px;
+  top: -18%;
+  right: -8%;
+}
+article:nth-child(4) img.ink2 {
+  width: 500px;
+  bottom: -20%;
+  left: -20%;
+}
+
+article.on {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+article:nth-child(1) {
+  transform: translateZ(0);
+  z-index: -10;
+}
+
+article:nth-child(2) {
+  transform: translateZ(-5000px);
+  z-index: -20;
+}
+
+article:nth-child(3) {
+  transform: translateZ(-10000px);
+  z-index: -30;
+}
+
+article:nth-child(4) {
+  transform: translateZ(-15000px);
+  z-index: -40;
+}
+
+.bg {
+  z-index: -150000px;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}/*# sourceMappingURL=index.css.map */
